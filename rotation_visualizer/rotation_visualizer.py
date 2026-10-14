@@ -66,10 +66,10 @@ def vector_rotation_visualizer(rotation, pre_vector=None):
 
 
 if __name__ == "__main__":
-    R = np.array([[1,0,0],
-                  [0,0,1],
-                  [0,-1,0]])
+    R = np.array([[0,1,0],
+                  [-1,0,0],
+                  [0,0,1]])
         
-    pre = np.random.random(3)
+    pre = np.array([1.0, -0.5, 1.0])
     print(R@pre)
     vector_rotation_visualizer(R, pre)
